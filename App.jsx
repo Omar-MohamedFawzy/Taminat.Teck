@@ -2,6 +2,13 @@ import React, { useState, useMemo } from 'react'
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Home, Info, Layers, FileText, HelpCircle, Calculator, MessageCircle, Moon, Sun } from 'lucide-react'
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  base: '/Taminat.Teck/',  // اسم الريبو هنا
+})
 
 function Layout({ children }) {
   return (
